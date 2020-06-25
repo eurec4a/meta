@@ -2,9 +2,7 @@
 This document suggests some standards for the treatment of EUREC4A metadata.  The goal is to evolve a metadata standard that will enable data analysis and perhaps better structure the use and provision of data more generally. The primary source of information for data files are the data files themselves, which implies that they contain their own meta-data, which may be in the form of links to other files or tables.  However, many people like to use filenames as a compressed form of meta data, and for this case we suggest some file naming conventions.
 
 ### Identifiers
-The data repository, will be built around a controlled vocabulary consisting of a hierarchy of unique identifiers.  We also encourage the use of these identifiers in file meta-data and for building file names.  
-
-The identifiers are as follows, not every identifier will apply to every instance of the data, in fact almost every dataset will miss one or more identifies:
+The data repository, will be built around a controlled vocabulary consisting of a hierarchy of unique identifiers.  We also encourage the use of these identifiers in file meta-data and for building file names.  The suggested identifiers are as follows, not every identifier will apply to every instance of the data, in fact almost every dataset will miss one or more identifies:
 
   * **campaign_id:**  EUREC4A
   * **project_id:**  An optional identifier to allow groups to give additional specificity to a set of measurements collected with different platforms, for instance ATOMIC.
