@@ -24,7 +24,7 @@ BCO:
     - name: Marvin Forde
       email: mforde@cimh.edu.bb
       tags: [tl]
-  color: blue
+  color: teal
 POLDIRAD:
   long_name: DLR Polarization Diversity Doppler Radar
   aliases:
@@ -67,7 +67,7 @@ Meteor:
   long_name: RV Meteor
   aliases:
     - FS Meteor
-    - M
+    - M161
   platform_type: Research Vessel
   home:
     institution: DFG
@@ -80,7 +80,7 @@ Meteor:
     - name: Stefan Kinne
       email: stefan.kinne@mpimet.mpg.de
       tags: []
-  color: dodgerblue
+  color: navy
 MS-Merian:
   long_name: RV Maria S. Merian
   aliases:
@@ -179,7 +179,7 @@ TO:
     - name: Tom Lachlan-Cope
       email: tlc@bas.ac.uk
       tags: [pi, dp]
-  color: red
+  color: crimson
 P3:
   long_name: NOAA Lockheed WP-3D Orion
   aliases:
@@ -199,7 +199,7 @@ P3:
     - name: Robert Pincus
       email:  Robert.Pincus@colorado.edu
       tags: [pi, dp]
-  color: steelblue
+  color: chartreuse
 RSS:
   long_name: Regional Security System
   aliases:
@@ -235,7 +235,7 @@ MPCK-plus:
     - name: Mohsen (Gholamhossein) Bagheri
       email: gholamhossein.bagheri@ds.mpg.de
       tags: [pi, dp]
-  color: red
+  color: indigo
 mini-MPCK:
   long_name: Miniaturized Max Planck CloudKite
   aliases:
@@ -253,17 +253,17 @@ mini-MPCK:
     - name: Mohsen (Gholamhossein) Bagheri
       email: gholamhossein.bagheri@ds.mpg.de
       tags: [pi, dp]
-  color: firebrick
+  color: orchid
 # drones
 #
 BOREAL:
-  long_name: SAS BORÉAL
+  long_name: SAS BOREAL
   aliases:
     - boréal
     - BOR1
   platform_type: UAS
   home:
-    institution : Metéo-France
+    institution : Météo-France
     country: France
     url: http://www.boreal-uas.com/
   contacts:
@@ -273,7 +273,72 @@ BOREAL:
     - name: Christophe Mazel
       email: cmazel@dronexsolution.com
       tags: [fm]
-  color: blue
+  color: gold
+Skywalker07:
+  long_name: CNRM Skywalker07
+  aliases:
+    - Skywalker7
+    - Skywalker-7
+    - Skywalker-07
+  platform_type: UAS
+  home:
+    institution : Météo-France
+    country: France
+    url:  http://www.umr-cnrm.fr/spip.php?rubrique266
+  contacts:
+    - name: Greg Roberts
+      email: greg.roberts@meteo.fr
+      tags: [pi, dp]
+    - name: Nicolas Maury
+      email: nicolas.maury@meteo.fr
+      tags: [fm]
+  color: grey
+Skywalker10:
+  long_name: CNRM Skywalker10
+  aliases:
+    - Skywalker-10
+  platform_type: UAS
+  home:
+    institution : Météo-France
+    country: France
+    url:  http://www.umr-cnrm.fr/spip.php?rubrique266
+  contacts:
+    - name: Greg Roberts
+      email: greg.roberts@meteo.fr
+      tags: [pi, dp]
+    - name: Nicolas Maury
+      email: nicolas.maury@meteo.fr
+      tags: [fm]
+  color: grey
+Skywalker12:
+  long_name: CNRM Skywalker12
+  aliases:
+    - Skywalker-12
+  platform_type: UAS
+  home:
+    institution : Météo-France
+    country: France
+    url:  http://www.umr-cnrm.fr/spip.php?rubrique266
+  contacts:
+    - name: Greg Roberts
+      email: greg.roberts@meteo.fr
+      tags: [pi, dp]
+    - name: Nicolas Maury
+      email: nicolas.maury@meteo.fr
+      tags: [fm]
+  color: grey
+QuadCopter:
+  long_name: University of Warsaw QuadCopter
+  platform_type: UAS
+  home:
+    institution : University of Warsaw
+    country: Poland
+    url:
+  contacts:
+    - name: Darek Baranowski
+      email: darek.baranowski@gmail.com
+      tags: [pi, dp]
+  color: deeppink
 CU-RAAVEN:
   long_name: Robust Autonomous Aerial Vehicle-Endurant Nimble
   aliases:
@@ -290,7 +355,7 @@ CU-RAAVEN:
     - name: Gijs de Boer
       email: gijs.deboer@colorado.edu
       tags: [pi, dp]
-  color: gold
+  color: cornflowerblue
   
 # sail-drones
 #
@@ -441,7 +506,7 @@ Melonhead:
     - name: Karen Heywood
       email: K.Heywood@uea.ac.uk
       tags: [pi, dp]
-  color: black
+  color: fuchsia
 Humpback:
   long_name: humpback
   aliases:
@@ -456,7 +521,7 @@ Humpback:
     - name: Karen Heywood
       email: K.Heywood@uea.ac.uk
       tags: [pi, dp]
-  color: black
+  color: fuchsia
 Omura:
   long_name: omura
   aliases:
@@ -471,7 +536,7 @@ Omura:
     - name: Karen Heywood
       email: K.Heywood@uea.ac.uk
       tags: [pi, dp]
-  color: black
+  color: fuchsia
 Kracken:
   long_name: kracken
   aliases:
@@ -502,7 +567,7 @@ IFM03:
     - name: Johannes Karstensen
       email: jkarstensen@geomar.de
       tags: [pi, dp]
-  color: black
+  color: red
 IFM09:
   long_name: OceanGlider IFM09
   aliases:
@@ -517,7 +582,7 @@ IFM09:
     - name: Johannes Karstensen
       email: jkarstensen@geomar.de
       tags: [pi, dp]
-  color: black
+  color: red
 IFM12:
   long_name: OceanGlider IFM12
   aliases:
@@ -532,7 +597,7 @@ IFM12:
     - name: Johannes Karstensen
       email: jkarstensen@geomar.de
       tags: [pi, dp]
-  color: black
+  color: red
 
 # drifters
 #
