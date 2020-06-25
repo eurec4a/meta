@@ -29,7 +29,7 @@ Examples could be
   - EUREC4A_ATOMIC_SWIFT-12_T05_20200120-20200212_v1.0.nc
   - EUREC4A_JOANNE_Dropsonde-RD41_Level_3_v0.5.3
 
-We envision every file beginning with the campaign_id and ends with the version_id and includes at least one further id to add content specificity.
+We envision every file beginning with the campaign_id and ends with the version_id and includes at least one further id to add content specificity. By this convention the version_id is everything between the last underscore and the last period.  Underscores are important as they delineate 'words'.
 
 ### File metadata
 
@@ -57,7 +57,7 @@ Primary-level flag short name   Definition
 Here is an example of the meta data from the level 2 sounding files created by Hauke Schulz.  Note also the file naming conventions.
 
 ```
-netcdf EUREC4A_RonBrown_soundings {
+netcdf EUREC4A_RonBrown_Vaisala-RS_L2_v2.2.0.nc {
 dimensions:
 	sounding = UNLIMITED ; // (329 currently)
 	alt = 3100 ;
