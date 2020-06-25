@@ -1,9 +1,8 @@
 ## EUREC4A
-Shared code and standards designed to structure the EUREC4A data reposistory, improve treatment of metadata and thereby ease the EUREC4A data analysis.  An evolving metadata concept is proposed at the end of this page.
-
+This document suggests some standards for the treatment of EUREC4A metadata.  The goal is to evolve a metadata standard that will enable data analysis and perhaps better structure the use and provision of data more generally. The primary source of information for data files are the data files themselves, which implies that they contain their own meta-data, which may be in the form of links to other files or tables.  However, many people like to use filenames as a compressed form of meta data, and for this case we suggest some file naming conventions.
 
 ### Identifiers
-The data repository, will be built around a controlled vocabulary consisting of a hierarchy of identifiers.  We also encourage the use of these identifiers in building file names and for inclusion as file meda-data.  We hope that doing so will help all of us see and more effectively use the diversity of data that has been collected, and also ease collaboration.
+The data repository, will be built around a controlled vocabulary consisting of a hierarchy of unique identifiers.  We also encourage the use of these identifiers in file meta-data and for building file names.  
 
 The identifiers are as follows, not every identifier will apply to every instance of the data, in fact almost every dataset will miss one or more identifies:
 
@@ -41,3 +40,52 @@ File metadata should include all the identifiers, i.e., platform_id: "ATR", camp
 ### Coordinates and variables
 
 We suggest a controlled vocabulary for position information, i.e., time (seconds since 1970-01-01, lat (degree_north), lon (degree_east), alt (m).  Note the short three letter names for position variables, i.e., lat, not latitude. Again coordination among instrument scientists so that similar instruments across different platforms have the same name would be desirable.  If a file is associated with a platform then the position information will be carried by that platform's track file and need not be provided separately for that instrument.
+
+### Example from sounding data ###
+
+```
+netcdf EUREC4A_RonBrown_soundings {
+dimensions:
+	sounding = UNLIMITED ; // (329 currently)
+	alt = 3100 ;
+	nv = 2 ;
+	str_dim = 1000 ;
+variables:
+	short alt(alt) ;
+		alt:long_name = "geopotential height" ;
+		alt:standard_name = "geopotential_height" ;
+		alt:units = "m" ;
+		alt:axis = "Z" ;
+		alt:positive = "up" ;
+		alt:bounds = "alt_bnds" ;
+...
+netcdf EUREC4A_RonBrown_soundings {
+dimensions:
+	sounding = UNLIMITED ; // (329 currently)
+	alt = 3100 ;
+	nv = 2 ;
+	str_dim = 1000 ;
+variables:
+	short alt(alt) ;
+		alt:long_name = "geopotential height" ;
+		alt:standard_name = "geopotential_height" ;
+		alt:units = "m" ;
+		alt:axis = "Z" ;
+		alt:positive = "up" ;
+		alt:bounds = "alt_bnds" ;
+...
+/ global attributes:
+		:title = "EUREC4A level 2 sounding data" ;
+		:platform_id = "RonBrown" ;
+		:instrument = "Radiosonde RS41-SGP by Vaisala" ;
+		:doi = "10.25326/62" ;
+		:created_with = "batch_interpolate_soundings.py with its last modifications on Wed Jun 24 00:42:03 2020" ;
+		:created_on = "Wed Jun 24 19:46:17 2020" ;
+		:featureType = "trajectory" ;
+		:Conventions = "CF-1.7" ;
+		:campaign_id = "EUREC4A" ;
+		:references = "Stephan et al. (2020): Ship- and island-based atmospheric soundings from the 2020 EUREC4A field campaign, ESSD" ;
+		:acknowledgement = "The MPI-M is listed as the institute of first contact. Investigators, Institutions and Agencies who contributed to this dataset are numerous and are acknowledged in the reference publication" ;
+		:instrument_id = "Vaisala-RS" ;
+		:version = "v2.2.0" ;
+}```
