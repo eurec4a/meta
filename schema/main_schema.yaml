@@ -25,7 +25,7 @@ mapping:
                         required: true
                     url:
                         type: str
-                        required: true
+                        required: false
                 required: true
             contacts:
                 type: seq
