@@ -37,7 +37,13 @@ File metadata should include all the identifiers, i.e., platform_id: "ATR", camp
 
 ### Coordinates and variables
 
-We suggest a controlled vocabulary for position information, i.e., time (seconds since 1970-01-01, lat (degree_north), lon (degree_east), alt (m).  Note the short three letter names for position variables, i.e., lat, not latitude. Again coordination among instrument scientists so that similar instruments across different platforms have the same name would be desirable.  If a file is associated with a platform then the position information will be carried by that platform's track file and need not be provided separately for that instrument.
+We suggest a controlled vocabulary for position information, i.e., time (seconds since 2020-01-01, lat (degree_north), lon (degree_east), alt (m).  Note the short three letter names for position variables, i.e., lat, not latitude. Again coordination among instrument scientists so that similar instruments across different platforms have the same name would be desirable.  If a file is associated with a platform then the position information will be carried by that platform's track file and need not be provided separately for that instrument.
+
+#### Time
+
+Leap seconds can cause ambiguities in the definition of the time variable. While the error may seem to be small, for measurements on fast platforms as present during EUREC4A, a different handling of leap seconds between dataset creator and dataset user can for example cause position errors of several kilometers. At the time of writing, the number of leap seconds since the common unix time epoch (1970-01-01) and now is 27. There has been no leap second since 2017-01-01 and currently there is no schedule for an upcoming leap second and 2020 will be a year without leap seconds.
+
+In order to prevent errors from leap second ambiguities, time variables should be given with no leap seconds between the reference date and variable date. For EUREC4A, a good default will be **seconds since 2020-01-01**. If a different resolution is required, other time intervals such as milliseconds, microseconds or nanoseconds are possible as well.
 
 ### Flagging
 
