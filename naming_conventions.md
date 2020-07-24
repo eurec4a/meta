@@ -10,12 +10,12 @@ The data repository, will be built around a controlled vocabulary consisting of 
   * **instrument_id:**  Specifies an instrument from which a measurement has been made.  Ideally similar instruments from different platforms will adopt similar identifiers. Level 2 data will often have a platform_id and instrument_id, but in some cases an instrument and platform may be synoymous.  
   * **product_id:**  An optional identifier to be used with the instrument_id to allow groups the flexibility to group measurements in different ways, i.e., SAFIRE_Aerosol might designate a bundle of aerosol instruments run by SAFIRE.
   * **variable_id:** A specific quantity. Usually this will be the output from a sensor, but it could also be a derived or composite variable.  Examples might be a voltage on a power supply, a temperature reading, a radar reflectivity, the latitude and longitude of a track, or maybe the divergence from a sounding circle. It should follow a standard vocabulary whenever possible, i.e., NetCDF Climate and Forecast (CF) Metadata Conventions.
-  * **time_id:** For some data it may be useful to indicate the time of the measurement or the time-range of the data included in the file.  This will adopt the form yyyyddmmTHHMMSS-yyyyddmmTHHMMSS, or e.g., yyyymmdd for a single instance. 
+  * **time_id:** For some data it may be useful to indicate the time of the measurement or the time-range of the data included in the file. This will adopt the form yyyymmddTHHMMSS-yyyymmddTHHMMSS, or e.g., yyyymmdd for a single instance.
  * **version_id:** The data versioning, in the form vN.M with N and M integers. Using version 0 for preliminary data is encouraged.
 
 This concept admits virtual platforms, or projects, as there may be ambiguity between the two.  For instance JOANNE is a virtual platform for dropsonde data, and combines dropsonde data from different ships.
 
-The EUREC4A data base will use the platform_id as the first level of data granualrity. Depending on the platform, additional levels of granularity (sub-directories) may be included and labeled by some (possibly empty) subset of instrument_id, product_id or variable_id.  It will not organize data by project_id, nor by time_id.
+The EUREC4A database will use the platform_id as the first level of data granularity. Depending on the platform, additional levels of granularity (sub-directories) may be included and labeled by some (possibly empty) subset of instrument_id, product_id or variable_id.  It will not organize data by project_id, nor by time_id.
 
 ### File naming conventions
 
