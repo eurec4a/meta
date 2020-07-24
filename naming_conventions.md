@@ -15,7 +15,7 @@ The data repository, will be built around a controlled vocabulary consisting of 
 
 This concept admits virtual platforms, or projects, as there may be ambiguity between the two.  For instance JOANNE is a virtual platform for dropsonde data, and combines dropsonde data from different ships.
 
-The EUREC4A data base will use the platform_id as the first level of data granualrity. Depending on the platform, additional levels of granularity (sub-directories) may be included and labeled by some (possibly empty) subset of instrument_id, product_id or variable_id.  It will not organize data by project_id, nor by time_id.
+The EUREC4A database will use the platform_id as the first level of data granularity. Depending on the platform, additional levels of granularity (sub-directories) may be included and labeled by some (possibly empty) subset of instrument_id, product_id or variable_id.  It will not organize data by project_id, nor by time_id.
 
 ### File naming conventions
 
