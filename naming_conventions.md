@@ -78,21 +78,7 @@ variables:
 		alt:axis = "Z" ;
 		alt:positive = "up" ;
 		alt:bounds = "alt_bnds" ;
-...
-netcdf EUREC4A_RonBrown_soundings {
-dimensions:
-	sounding = UNLIMITED ; // (329 currently)
-	alt = 3100 ;
-	nv = 2 ;
-	str_dim = 1000 ;
-variables:
-	short alt(alt) ;
-		alt:long_name = "geopotential height" ;
-		alt:standard_name = "geopotential_height" ;
-		alt:units = "m" ;
-		alt:axis = "Z" ;
-		alt:positive = "up" ;
-		alt:bounds = "alt_bnds" ;
+
 ...
 / global attributes:
 		:title = "EUREC4A level 2 sounding data" ;
